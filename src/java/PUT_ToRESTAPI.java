@@ -43,7 +43,7 @@ public class PUT_ToRESTAPI extends HttpServlet {
 
         
   
-                                URL url = new URL("http://localhost:8082/myuser/"+id);
+                                URL url = new URL("http://13.232.202.187:8080/myuser/"+id);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setDoOutput(true);
                 conn.setRequestMethod("PUT");
