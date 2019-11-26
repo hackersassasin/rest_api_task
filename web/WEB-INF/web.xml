@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+   
+    <servlet>
+        <servlet-name>POST_ToRESTAPI</servlet-name>
+        <servlet-class>POST_ToRESTAPI</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>POST_ToRESTAPI</servlet-name>
+        <url-pattern>/POST_ToRESTAPI</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>PUT_ToRESTAPI</servlet-name>
+        <servlet-class>PUT_ToRESTAPI</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>PUT_ToRESTAPI</servlet-name>
+        <url-pattern>/PUT_ToRESTAPI</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DEL_ToRESTAPI</servlet-name>
+        <servlet-class>DEL_ToRESTAPI</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DEL_ToRESTAPI</servlet-name>
+        <url-pattern>/DEL_ToRESTAPI</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
