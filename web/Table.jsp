@@ -42,7 +42,7 @@
             JSONObject jOB = null;
             try {
 
-                URL url = new URL ( "http://localhost:8082/myuser" );
+                URL url = new URL ( "http://13.232.202.187:8080/myuser/" );
                 HttpURLConnection conn = ( HttpURLConnection ) url.openConnection ();
                 conn.setRequestMethod ( "GET" );
                 conn.setRequestProperty ( "Accept" , "application/json" );
